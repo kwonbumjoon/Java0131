@@ -8,11 +8,18 @@ public class PhoneController {
 //		
 //		NewestPhone np = new NewestPhone();
 		
-		Phone phone = new Phone("m1", "흰색");
+//		Phone phone = new Phone("m1", "흰색");
+//		
+//		// 둘 다 같은 표현
+//		System.out.println(phone.toString());
+//		System.out.println(phone);
 		
-		// 둘 다 같은 표현
-		System.out.println(phone.toString());
-		System.out.println(phone);
+		SmartPhone sp = new SmartPhone(true);
+		//Phone
+		//SmartPhone(boolean wifi)
+		System.out.println(sp.toString());
+		//Phone [model=null, color=null]
+		//SmartPhone [wifi=true]
 		
 	}
 }

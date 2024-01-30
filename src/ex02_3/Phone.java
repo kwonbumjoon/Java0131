@@ -1,9 +1,9 @@
-package ex02;
+package ex02_3;
 
 public class Phone {
 	// 필드 선언
-	public String model;
-	public String color;
+	private String model;
+	private String color;
 	
 	// 메소드 선언
 	public Phone() {
@@ -19,6 +19,11 @@ public class Phone {
 	public void bell() {
 		System.out.println("벨이 울립니다.");
 	}
+	@Override
+	public String toString() {
+		return "Phone [model=" + model + ", color=" + color + "]";
+	}
+
 	public void sendVoice(String message) {
 		System.out.println("자기: " + message);
 	}

@@ -1,4 +1,4 @@
-package ex02_2;
+package ex02_3;
 
 public class SmartPhone extends Phone {
 	// 필드 선언
@@ -10,6 +10,12 @@ public class SmartPhone extends Phone {
 	
 	public SmartPhone(boolean wifi) {
 		System.out.println("SmartPhone(boolean wifi)");
+		this.wifi = wifi;
+	}
+
+	public SmartPhone(String model, String color, boolean wifi) {
+		super(model, color);	// 상위 클래스 생성자 호출
+		System.out.println("SmartPhone(String model, String color, boolean wifi)");
 		this.wifi = wifi;
 	}
 	

@@ -1,4 +1,4 @@
-package ex02_2;
+package ex02_4;
 
 public class NewestPhone extends Phone {
 	
@@ -7,7 +7,6 @@ public class NewestPhone extends Phone {
 	public NewestPhone() {
 		System.out.println("NewestPhone()");
 	}
-	
 	public void internet() {
 		System.out.println("인터넷 연결!!");
 	}

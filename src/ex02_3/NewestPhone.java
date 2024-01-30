@@ -1,4 +1,4 @@
-package ex02_2;
+package ex02_3;
 
 public class NewestPhone extends Phone {
 	

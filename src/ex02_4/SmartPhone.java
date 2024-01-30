@@ -1,10 +1,9 @@
-package ex02;
+package ex02_4;
 
 public class SmartPhone extends Phone {
 	// 필드 선언
 	public boolean wifi;
 	
-	// 생성자 선언
 	public SmartPhone() {
 		System.out.println("Smartphone()");
 	}
@@ -13,16 +12,18 @@ public class SmartPhone extends Phone {
 		System.out.println("SmartPhone(boolean wifi)");
 		this.wifi = wifi;
 	}
-	
-	public SmartPhone(String model, String color) {
-		this.model = model;
-		this.color = color;
+
+	@Override // 어노테이션 sendVoice는 상위 클래스를 재정의함.
+	public void sendVoice(String message) {
+		System.out.println("음성메세지: " + message);
 	}
 	
-	public void setWifi(boolean wifi) {
-		this.wifi = wifi;
-		System.out.println("와이파이 상태를 변경했습니다.");
+	@Override
+	public String toString() {
+		System.out.println(super.toString());
+		return "SmartPhone [wifi=" + wifi + "]";
 	}
+
 	public void internet() {
 		System.out.println("인터넷에 연결합니다.");
 	}
