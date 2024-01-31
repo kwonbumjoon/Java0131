@@ -20,6 +20,7 @@ package ex04;
 public class Animal {
 	private String sound = "동물소리 : ";
 	
+	public Animal() {}
 	public void makeSound() {
 		System.out.print(this.sound);
 	}
