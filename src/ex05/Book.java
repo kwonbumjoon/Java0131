@@ -22,8 +22,13 @@ public class Book {
 	private int publishYear;
 	
 	public Book() {}
+	public Book(String title, String author, int publishYear) {
+		this.title = title;
+		this.author = author;
+		this.publishYear = publishYear;
+	}
 	
 	public String getDetails() {
-		return "title : " +title+ ", author : " +author + ", publishYear : " +publishYear;
+		return title + " : " + author + " : " + publishYear;
 	}
 }
