@@ -1,4 +1,4 @@
-package ex04;
+package ex04.copy;
 /* 문제
  * 동물원 관리 시스템
 	동물원에서 다양한 동물들을 관리하는 간단한 시스템을 자바로 구현하세요.
@@ -18,9 +18,10 @@ package ex04;
 	main 메소드에서 각기 다른 종류의 동물들을 생성합니다.
 	생성된 각 동물에 대해 makeSound()를 호출하여 해당 동물의 소리를 출력합니다.*/
 public class Animal {
+	private String sound = "동물소리 : ";
 	
 	public Animal() {}
 	public void makeSound() {
-		System.out.println("");
+		System.out.print(this.sound);
 	}
 }
